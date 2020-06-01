@@ -35,8 +35,7 @@ plt.close()
 #slicing for india_dataset
 #region = india_dataset.iloc[:,2]
 print (region_wise.groupby('State/UnionTerritory')['Confirmed', 'ConfirmedIndianNational', 'ConfirmedForeignNational', 'Cured', 'Deaths'].plot(kind='barh'))
-region_wise.set_xlabel('Count in the Numbers')
-region_wise.set_ylabel('Region')
+
 plt.close()
 #region_wise['State/UnionTerritory'] = [ region_wise["State/UnionTerritory"][i] == region_wise["State/UnionTerritory"][i] for i in range(len(region_wise["State/UnionTerritory"]))]
 
